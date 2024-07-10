@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8295716752278446481}
   - component: {fileID: 1278245022397346536}
   - component: {fileID: 3357848535779759514}
-  - component: {fileID: 1736763529355638819}
   - component: {fileID: 1094100872292080008}
   - component: {fileID: 1760953042007901179}
   - component: {fileID: 4641464638407326883}
@@ -96,20 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _collider: {fileID: 4039688497400520252}
---- !u!114 &1736763529355638819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2532838268183409320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32e4a834b40c8547bd4daa9bc6b7c07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _core: {fileID: 0}
-  _particle: {fileID: 4388662564496438605}
 --- !u!114 &1094100872292080008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _core: {fileID: 3357848535779759514}
   _transform: {fileID: 7483222771040870753}
-  _delayBeforeRotation: 5
+  _delaytime: 5
   _rotationSpeed: 0.025
 --- !u!114 &6583093607597130569
 MonoBehaviour:
@@ -167,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _core: {fileID: 3357848535779759514}
-  _gameObject: {fileID: 0}
+  _object: {fileID: 2532838268183409320}
 --- !u!1 &3681771513130214580
 GameObject:
   m_ObjectHideFlags: 0
@@ -10015,12 +10000,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
---- !u!198 &4388662564496438605 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198917022394846920, guid: e1b08032bec16ba4eb1ae23cbd572664,
-    type: 3}
-  m_PrefabInstance: {fileID: 4478012496879483781}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4479550123651994547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4388947112716342, guid: e1b08032bec16ba4eb1ae23cbd572664,
