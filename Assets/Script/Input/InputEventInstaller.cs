@@ -9,14 +9,16 @@ public class InputEventInstaller : MonoInstaller
     
     public override void InstallBindings()
     {
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
+/*
         Container.Bind(typeof(IInputEventProvider), 
                 typeof(IInitializable), typeof(IDisposable))
             .To<MouseInputProvider>().AsSingle().WithArguments(_launchButton);
-#elif UNITY_ANDROID
+*/
+//#elif UNITY_ANDROID
         Container.Bind(typeof(IInputEventProvider), 
                 typeof(IInitializable), typeof(IDisposable))
-            .To<TouchInputProvider>().AsSingle();
-#endif
+            .To<PhysicalButtonsInputEventProvider>().AsSingle();
+//#endif
     }
 }

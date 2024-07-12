@@ -3,7 +3,7 @@ using UniRx;
 using UnityEngine.UI;
 using Zenject;
 
-public class MouseInputProvider : IInputEventProvider, IInitializable, IDisposable
+public class WidgetButtonInputProvider : IInputEventProvider, IInitializable, IDisposable
 {
     /// <summary>
     /// 
@@ -25,7 +25,7 @@ public class MouseInputProvider : IInputEventProvider, IInitializable, IDisposab
     /// 
     /// </summary>
     /// <param name="shotButton"></param>
-    public MouseInputProvider(Button launchButton)
+    public WidgetButtonInputProvider(Button launchButton)
     {
         _launchButton = launchButton;
     }   
