@@ -12,6 +12,12 @@ public class SoundEffectData
     /// </summary>
     public enum SoundEffect
     {
+        ButtonClick,
+        MissileLaunch,
+        BuildingBreak,
+        GameClear1,
+        GameClear2,
+        GameClear3,
         WidgetClick,
     }
 

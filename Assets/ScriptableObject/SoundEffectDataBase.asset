@@ -14,5 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _SoundEffectDataList:
   - se: 0
-    audioClip: {fileID: 0}
-    volume: 1
+    audioClip: {fileID: 8300000, guid: e80a8cb9dc43ff147990f29bbc689235, type: 3}
+    volume: 0.95
+  - se: 1
+    audioClip: {fileID: 8300000, guid: 7fc03c3c95e4c5045b1be846190ea3e7, type: 3}
+    volume: 0.9
+  - se: 2
+    audioClip: {fileID: 8300000, guid: 3a68610f327ba6742aba036be9acaa03, type: 3}
+    volume: 0.8
+  - se: 3
+    audioClip: {fileID: 8300000, guid: 6e0a03c4b0bb40c4796cb6a589e32873, type: 3}
+    volume: 0.9
+  - se: 4
+    audioClip: {fileID: 8300000, guid: d53511f7a6977ca44af809790c289a40, type: 3}
+    volume: 0.7
+  - se: 5
+    audioClip: {fileID: 8300000, guid: 2bb31c50b8fd7644e971ce0bdf33e84c, type: 3}
+    volume: 0.8
