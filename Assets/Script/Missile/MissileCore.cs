@@ -3,6 +3,9 @@ using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
 
+/// <summary>
+/// ミサイルのプロパティを管理する
+/// </summary>
 public class MissileCore : MonoBehaviour
 {
     /// <summary>
@@ -12,19 +15,19 @@ public class MissileCore : MonoBehaviour
     private readonly AsyncSubject<Unit> _initializedSubject = new AsyncSubject<Unit>();
     
     /// <summary>
-    /// 
+    /// ミサイルが壊れたか
     /// </summary>
     public IReactiveProperty<bool> IsBroke => _isBroke;
     private BoolReactiveProperty _isBroke = new BoolReactiveProperty(false);
 
     /// <summary>
-    /// 
+    /// 目標のTransform
     /// </summary>
     public Transform TargetTransform=>_targetTransform;
     private Transform _targetTransform;
 
     /// <summary>
-    /// 
+    /// Collider
     /// </summary>
     [SerializeField] private Collider _collider;
     
@@ -32,6 +35,8 @@ public class MissileCore : MonoBehaviour
     {
         _initializedSubject.Subscribe(_ =>
         {
+            //何か接触したら&&IBreakableを持っていたら、そのオブジェクトを壊す
+            //そして、ミサイルも壊す
             _collider
                 .OnTriggerEnterAsObservable()
                 .Subscribe(target =>

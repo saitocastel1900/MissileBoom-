@@ -4,15 +4,34 @@ using UniRx;
 using UnityEngine;
 using Zenject;
 
+/// <summary>
+/// カメラを切り替える
+/// </summary>
 public class MainCameraChangeController : MonoBehaviour
 {
+    /// <summary>
+    /// ミサイルに向いているカメラ
+    /// </summary>
     [SerializeField] private CinemachineVirtualCamera _missileLookAtCamera;
+    
+    /// <summary>
+    /// ビルに向いているカメラ
+    /// </summary>
     [SerializeField] private CinemachineVirtualCamera _buildingLookAtCamera;
+    
+    /// <summary>
+    /// 切り替え始めるまでの時間
+    /// </summary>
     [SerializeField] private float _duration;
+    
+    /// <summary>
+    /// IInputEventProvider
+    /// </summary>
     [Inject] private IInputEventProvider _input;
     
-    void Start()
+    private void Start()
     {
+        //発射ボタンが押されたら、カメラを切り替える
         _input
             .IsButtonPush
             .SkipLatestValueOnSubscribe()

@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// BGMを登録・調整する
+/// </summary>
 [Serializable]
 public class BgmData
 {
     /// <summary>
-    /// 用途に応じたラベルを設定
+    /// BGMの種類
     /// </summary>
     public enum BGM
     {

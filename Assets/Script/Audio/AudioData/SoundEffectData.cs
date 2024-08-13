@@ -2,13 +2,13 @@ using System;
 using UnityEngine;
 
 /// <summary>
-/// SEを登録・調整するクラス
+/// SEを登録・調整する
 /// </summary>
 [Serializable]
 public class SoundEffectData
 {
     /// <summary>
-    /// 用途に応じたラベルを設定
+    /// SoundEffectの種類
     /// </summary>
     public enum SoundEffect
     {
