@@ -3,6 +3,9 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// DotweenのUtility
+/// </summary>
 public static class AnimationUtility
 {
     /// <summary>
